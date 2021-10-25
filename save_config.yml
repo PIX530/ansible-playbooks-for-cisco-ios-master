@@ -3,7 +3,8 @@
   gather_facts: no
 
   tasks:
-  - name: CONFIGURE FILE PROMPT 
+  
+  - name: CONFIGURE
       ios_config:
         lines:
           - file prompt quiet
