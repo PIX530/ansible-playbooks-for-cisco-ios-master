@@ -11,4 +11,4 @@
         - copy run start
     register: banner
 
-  - debug: var=banner.stdout_lines
+  #- debug: var=banner.stdout_lines
