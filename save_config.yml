@@ -1,0 +1,14 @@
+---
+- hosts: ios
+  gather_facts: no
+
+  tasks:
+
+
+  - name: SHOW RUN | BEG BANNER 
+    ios_command:
+      commands:
+        - copy run start
+    register: banner
+
+  - debug: var=banner.stdout_lines
