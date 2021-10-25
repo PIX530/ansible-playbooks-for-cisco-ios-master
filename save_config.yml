@@ -8,7 +8,7 @@
   - name: SHOW RUN | BEG BANNER 
     ios_command:
       commands:
-        - copy run start
-    register: banner
+        - copy running-config startup-config
+    #register: banner
 
   #- debug: var=banner.stdout_lines
