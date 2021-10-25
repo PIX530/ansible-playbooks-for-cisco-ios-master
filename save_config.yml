@@ -2,25 +2,15 @@
 - hosts: ios
   gather_facts: no
 
+
   tasks:
-  
- - name: NO SERVICE PAD 
+ 
+  - name: no file prompt
     ios_config:
       lines:
-        - no service pad
+        - file prompt quiet
 
-  - name: IP SSH VERSION 2 
-    ios_config:
-      lines:
-        - ip ssh version 2
-
-  - name: CONFIGURE
-      ios_config:
-        lines:
-          - file prompt quiet
-
-  - name: SHOW RUN | BEG BANNER 
+  - name: SAVE CONFIG 
     ios_command:
       commands:
         - copy running-config startup-config
-
