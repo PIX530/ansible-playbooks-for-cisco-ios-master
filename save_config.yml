@@ -3,7 +3,10 @@
   gather_facts: no
 
   tasks:
-
+  - name: CONFIGURE FILE PROMPT 
+      ios_config:
+        lines:
+          - file prompt quiet
 
   - name: SHOW RUN | BEG BANNER 
     ios_command:
