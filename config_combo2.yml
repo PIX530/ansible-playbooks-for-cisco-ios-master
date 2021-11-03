@@ -10,7 +10,7 @@
 #+ logging buffered 15000
 
 
-- hosts: ios
+- hosts: all
   gather_facts: no
 
 
