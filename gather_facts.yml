@@ -1,6 +1,6 @@
 ---
 # Test Max Nov 3
-- hosts: ios
+- hosts: all
   gather_facts: no
 
   tasks:
